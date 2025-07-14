@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Parvularia UPLA</title>
+  <style>
+    body { font-family: Arial; background: #ffeef5; text-align:center; margin:0; }
+    h1 { color:#d63384; padding:20px 0; }
+    .malla { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; padding:20px; max-width:1000px; margin:auto;}
+    .cuadro { background:#f8bbd0; border:2px solid #d63384; border-radius:8px;
+      padding:15px; cursor:pointer; color:#880e4f; font-weight:bold;
+      transition: transform .2s, background .3s; }
+    .cuadro:hover { background:#f48fb1; transform:scale(1.03); }
+  </style>
+</head>
+<body>
+  <h1>Malla UPLA Educación Parvularia</h1>
+  <div class="malla">
+    <div class="cuadro" onclick="alert('📘 Semestre 1: Fundamentación del Saber Pedagógico')">Fundamentación del Saber Pedagógico</div>
+    <!-- Agrega todos los ramos en orden, aquí solo muestro algunos -->
+    <div class="cuadro" onclick="alert('📘 Semestre 1: Desafíos de la Educación Parvularia')">Desafíos de la Educación Parvularia</div>
+    <div class="cuadro" onclick="alert('📘 Semestre 1: Prevención de Riesgos y Primeros Auxilios')">Prevención de Riesgos y Primeros Auxilios</div>
+    <!-- Continúa así por todos los ramos... -->
+    <div class="cuadro" onclick="alert('📘 Semestre 8: Práctica Profesional')">Práctica Profesional</div>
+    <div class="cuadro" onclick="alert('📘 Semestre 8: Trabajo de Síntesis Profesional')">Trabajo de Síntesis Profesional</div>
+  </div>
+</body>
+</html>
